@@ -4,17 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>××鸟</title>
     <!-- 导入Vue包 -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
+    <h4 style="color: darkcyan;">声明：拿来学习的</h4>
     <!-- 创建要控制的区域 -->
     <div id="app">
         <input type="button" value="点这开始动" @click="begin">
         <input type="button" value="点这停" @click="stop">
         <h4 style="color: red">{{ msg }}</h4>
+    </div>
+
+    <div id="calc">
+        <p style="background-color: darkgrey; width: 200px;">一个计算器</p>
+        <input type="text" v-model="n1">
+        <select v-model="opt">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="×">×</option>
+            <option value="÷">÷</option>
+        </select>
+
+        <input type="text" v-model="n2">
+
+        <input type="button" value="=" @click="calc">
+
+        <input type="text" v-model="resoult">
     </div>
 
     <script>
@@ -41,9 +61,22 @@
             },
         });
 
-        // 给[开始]按钮绑定点击事件
-        // [开始]的事件函数：拿到 msg 字符串，调用 substring 对字符串进行截取，第一个放最后
-        // 为实现循环播放，将上一步代码放入定时器
+        let nvm = new Vue({
+            el: '#calc',
+            data: {
+                n1: null,
+                n2: null,
+                opt: '+',
+                resoult: null
+            },
+            methods: {
+                calc(){
+                    let needToDo = 'Number(this.n1)' + this.opt + 'Number(this.n2)';
+                    this.resoult = eval(needToDo);
+                }
+            }
+        });
+
     </script>
 </body>
 
