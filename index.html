@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>××鸟</title>
     <!-- 导入Vue包 -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -11,32 +12,34 @@
 </head>
 
 <body>
-    <h4 style="color: darkcyan;" class="center">声明：拿来学习的</h4>
-    <!-- 创建要控制的区域 -->
-    <div id="app" class="center box">
-        <input type="button" value="点这开始动" @click="begin">
-        <input type="button" value="点这停" @click="stop">
-        <h4 style="color: red">{{ msg }}</h4>
+    <div id="container">
+        <h4 style="color: darkcyan;" class="center">声明：拿来学习的</h4>
+        <!-- 创建要控制的区域 -->
+        <div id="app" class="center box">
+            <input type="button" value="点这开始动" @click="begin">
+            <input type="button" value="点这停" @click="stop">
+            <h4 style="color: red">{{ msg }}</h4>
+        </div>
+
+        <div id="calc">
+            <p style="background-color: darkgrey;">一个计算器</p>
+            <input type="text" v-model="n1">
+            <select v-model="opt">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="×">×</option>
+                <option value="÷">÷</option>
+            </select>
+
+            <input type="text" v-model="n2">
+
+            <input type="button" value="=" @click="calc">
+
+            <input type="text" v-model="resoult">
+        </div>
+
+        <!-- 好像有渲染先后问题，所以js引用就放到最后了 -->
     </div>
-
-    <div id="calc">
-        <p style="background-color: darkgrey;">一个计算器</p>
-        <input type="text" v-model="n1">
-        <select v-model="opt">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="×">×</option>
-            <option value="÷">÷</option>
-        </select>
-
-        <input type="text" v-model="n2">
-
-        <input type="button" value="=" @click="calc">
-
-        <input type="text" v-model="resoult">
-    </div>
-    
-    <!-- 好像有渲染先后问题，所以js引用就放到最后了 -->
     <script src="./js.js"></script>
 </body>
 

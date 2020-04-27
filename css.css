@@ -1,5 +1,4 @@
-body {
-    background-color: #96A8C8;
+#container {
     text-align: center;
     font-size: 16px;
     font-variant: small-caps;
@@ -10,6 +9,16 @@ body {
     left: 50%;
     width: 780px;
     margin-left: -390px;
+}
+
+body {
+    background-color: #96A8C8;
+    display: block;
+    margin: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
 }
 
 div {
