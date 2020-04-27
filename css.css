@@ -1,24 +1,24 @@
 #container {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-variant: small-caps;
     font-family: Lucida,Helvetica,sans-serif;
-    font-weight: 500;
+    font-weight: 31.25rem;
     text-decoration: none;
     position: absolute;
     left: 50%;
-    width: 780px;
-    margin-left: -390px;
+    width: 48.75rem;
+    margin-left: -24.375rem;
 }
 
 body {
     background-color: #96A8C8;
     display: block;
-    margin: 8px;
-    margin-top: 8px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    margin-left: 8px;
+    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 div {
@@ -26,7 +26,7 @@ div {
 }
 
 .center {
-    width: 780px;
+    width: 48.75rem;
     position: relative;
     overflow: hidden;
     overflow-x: hidden;
@@ -38,10 +38,10 @@ div {
     border-style: solid;
     border-width: 1.5px;
     border-color: #071419;
-    border-radius: 12px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    -moz-border-radius: 12px;
+    border-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
 }
