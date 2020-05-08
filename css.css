@@ -12,6 +12,10 @@
 }
 
 body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
     background-color: #96A8C8;
     display: block;
     margin: 0.5rem;
