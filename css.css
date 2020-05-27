@@ -41,3 +41,11 @@ body {
     left: 50%;
     border-radius: 5px;
 }
+
+#main div {
+    padding-top: 10px;
+}
+
+#btn {
+    margin-bottom: 10px;
+}

@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="format-detection" content="telephone=yes" />
@@ -18,14 +17,24 @@
     <div id="header">
         <div id="logo">
             <a href="https://akashiya-chime.github.io/shadow_stu/">
-                <img src="./res/logo.png" alt="ShadowStudio" title="Welcome to Shadow Studio!" >
+                <img src="./res/logo.png" alt="ShadowStudio" title="Welcome to Shadow Studio!">
             </a>
         </div>
     </div>
     <div id="main">
-        
+        <div id="webgl">
+            <div id="btn">
+                <button id="x">x</button>
+                <button id="y">y</button>
+                <button id="z">z</button>
+                <button id="p">p</button>
+            </div>
+            <canvas id="glcanvas" width="640" height="480"></canvas>
+        </div>
     </div>
 </body>
 
+<script src="gl-matrix.js"></script>
 <script src="./js.js"></script>
+
 </html>
